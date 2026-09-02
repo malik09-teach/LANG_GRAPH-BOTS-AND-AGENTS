@@ -4,3 +4,5 @@ uv.lock
 __pycache__/
 .DS_Store
 .streamlit/ 
+.venv/  
+.langgraph_api

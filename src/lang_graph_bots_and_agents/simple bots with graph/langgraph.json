@@ -1,0 +1,9 @@
+{
+    "graphs": {
+        "secure_react_agent": "./human in loop.py:build_agent"
+    },
+    "env": "../../../../.env",
+    "dependencies": [
+        "."
+    ]
+}

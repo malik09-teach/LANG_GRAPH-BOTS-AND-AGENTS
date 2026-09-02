@@ -4,3 +4,4 @@ langsmith
 pandas 
 langchain-groq
 python-dotenv
+langgraph-cli[inmem]
