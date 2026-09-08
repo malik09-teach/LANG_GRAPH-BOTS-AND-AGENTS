@@ -1,11 +1,15 @@
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from agents.supervisor import AgentSupervisor
 
 app = FastAPI(title="Neuro-Symbolic Agentic Formulation API")
 
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 @app.get("/")
 def read_root():
-    return {"message": "Agentic Formulation System is running."}
+    return FileResponse("static/index.html")
 
 @app.post("/optimize")
 def run_optimization_cycle(iterations: int = 5):
