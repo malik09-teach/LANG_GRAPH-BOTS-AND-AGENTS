@@ -4,61 +4,56 @@ from botorch.fit import fit_gpytorch_mll
 from gpytorch.mlls import ExactMarginalLogLikelihood
 from botorch.acquisition import ExpectedImprovement
 from botorch.optim import optimize_acqf
+import random
 
 class BayesianOptimizer:
-    def __init__(self):
-        # We store past experiments: X (formulation parameters), Y (stability scores)
-        self.train_X = None
-        self.train_Y = None
-        self.model = None
-
-    def update_data(self, x_new: list, y_new: float):
-        """Update the dataset with a new experiment result."""
-        x_tensor = torch.tensor([x_new], dtype=torch.float64)
-        y_tensor = torch.tensor([[y_new]], dtype=torch.float64)
-
-        if self.train_X is None:
-            self.train_X = x_tensor
-            self.train_Y = y_tensor
-        else:
-            self.train_X = torch.cat([self.train_X, x_tensor])
-            self.train_Y = torch.cat([self.train_Y, y_tensor])
-            
-        self._fit_model()
-
-    def _fit_model(self):
-        """Fit the Gaussian Process surrogate model."""
-        if self.train_X.shape[0] < 2:
-            return # Need at least 2 points to fit properly
-            
-        self.model = SingleTaskGP(self.train_X, self.train_Y)
-        mll = ExactMarginalLogLikelihood(self.model.likelihood, self.model)
-        fit_gpytorch_mll(mll)
-
-    def suggest_next_experiment(self, bounds: list, num_candidates: int = 3) -> list:
+    def __init__(self, bounds: list[tuple[float, float]]):
         """
-        Suggest the top 'num_candidates' formulations to test next.
-        bounds: List of tuples (min, max) for each continuous parameter.
+        Initialize the BO engine with the bounds for each variable.
+        bounds: List of tuples (min, max) for each variable defined by the user.
         """
-        if self.train_X is None or self.train_X.shape[0] < 2:
-            # Cold start: return random points within bounds
-            import random
+        self.bounds = bounds
+        self.num_dims = len(bounds)
+
+    def suggest_next_experiment(self, history: list[dict], num_candidates: int = 5) -> list[list[float]]:
+        """
+        Suggest candidates based on the real lab history provided by the user.
+        history: List of dicts, e.g., [{"candidate": [x1, x2], "score": 85.0}, ...]
+        """
+        if len(history) < 2:
+            # Cold start: suggest random points within user-defined bounds
             candidates = []
             for _ in range(num_candidates):
-                point = [random.uniform(b[0], b[1]) for b in bounds]
+                point = [random.uniform(b[0], b[1]) for b in self.bounds]
                 candidates.append(point)
             return candidates
 
-        # Use Expected Improvement (EI)
-        best_f = self.train_Y.max()
-        EI = ExpectedImprovement(self.model, best_f=best_f)
+        # Build tensors from history
+        X_data = []
+        Y_data = []
+        for entry in history:
+            X_data.append(entry["candidate"])
+            Y_data.append([entry["score"]])
+            
+        train_X = torch.tensor(X_data, dtype=torch.float64)
+        train_Y = torch.tensor(Y_data, dtype=torch.float64)
 
-        bounds_tensor = torch.tensor(bounds, dtype=torch.float64).T
+        # Fit GP
+        model = SingleTaskGP(train_X, train_Y)
+        mll = ExactMarginalLogLikelihood(model.likelihood, model)
+        fit_gpytorch_mll(mll)
+
+        # Acquisition function
+        best_f = train_Y.max()
+        EI = ExpectedImprovement(model, best_f=best_f)
+
+        bounds_tensor = torch.tensor(self.bounds, dtype=torch.float64).T
         
+        # Optimize to find best candidates
         candidates, _ = optimize_acqf(
             acq_function=EI,
             bounds=bounds_tensor,
-            q=num_candidates, # number of candidates
+            q=num_candidates, 
             num_restarts=5,
             raw_samples=20,
         )

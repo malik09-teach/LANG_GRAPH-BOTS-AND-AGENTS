@@ -8,4 +8,4 @@ botorch
 torch
 gpytorch
 pydantic>=2.7.1
-numpy<2.0
+numpy

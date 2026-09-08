@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuro-Symbolic Formulation Agent</title>
+    <title>Agentic Formulation - Interactive Mode</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
 </head>
@@ -12,50 +12,72 @@
         <header>
             <div class="logo">
                 <div class="logo-icon"></div>
-                <h1>Agentic Formulation</h1>
+                <h1>Agentic Formulation Platform</h1>
             </div>
-            <p>Neuro-Symbolic Bayesian Optimization</p>
+            <p>Human-in-the-Loop Active Learning</p>
         </header>
 
-        <main>
-            <section class="control-panel glass-panel">
-                <h2>Experiment Configuration</h2>
-                <div class="input-group">
-                    <label for="iterations">Number of Iterations</label>
-                    <input type="number" id="iterations" value="5" min="1" max="20">
+        <main id="main-content">
+            <!-- Setup Section -->
+            <section id="setup-section" class="glass-panel">
+                <h2>1. Define Your Space</h2>
+                <p class="subtitle">Add the chemical/process variables you want to optimize.</p>
+                
+                <div id="variables-container">
+                    <div class="variable-row header-row">
+                        <span>Name (e.g. Excipient A)</span>
+                        <span>Symbol (e.g. x1)</span>
+                        <span>Min</span>
+                        <span>Max</span>
+                    </div>
+                    <!-- JS will inject rows here -->
                 </div>
-                <button id="run-btn" class="primary-btn">
-                    <span class="btn-text">Run Optimization</span>
-                    <div class="loader hidden"></div>
-                </button>
+                <button id="add-var-btn" class="secondary-btn">+ Add Variable</button>
+
+                <h3 class="mt-2">2. Define Constraints (Optional)</h3>
+                <p class="subtitle">Write mathematical constraints using your symbols (e.g., <code>x1 + x2 <= 1.0</code>)</p>
+                <textarea id="constraints-input" rows="3" placeholder="x1 + x2 <= 1.0"></textarea>
+
+                <button id="start-session-btn" class="primary-btn mt-2">Initialize Optimization Session</button>
             </section>
 
-            <section class="results-panel glass-panel">
-                <div class="results-header">
-                    <h2>Optimization Results</h2>
-                    <div class="status-badge" id="status-badge">Idle</div>
-                </div>
-                
-                <div class="metrics-grid hidden" id="metrics-grid">
-                    <div class="metric-card">
-                        <h3>Best Stability Score</h3>
-                        <div class="metric-value" id="best-score">--</div>
-                    </div>
-                    <div class="metric-card">
-                        <h3>Best Formulation</h3>
-                        <div class="metric-value small-text" id="best-formulation">--</div>
-                    </div>
-                    <div class="metric-card">
-                        <h3>Iterations</h3>
-                        <div class="metric-value" id="total-iterations">--</div>
-                    </div>
+            <!-- Interactive Loop Section (Hidden Initially) -->
+            <section id="loop-section" class="glass-panel hidden">
+                <div class="loop-header">
+                    <h2>Active Experiment Loop</h2>
+                    <span id="iteration-counter" class="badge">Iteration 1</span>
                 </div>
 
-                <div class="history-container hidden" id="history-container">
-                    <h3>Experiment History</h3>
-                    <div class="history-list" id="history-list">
-                        <!-- History items will be injected here -->
+                <div class="proposal-card">
+                    <h3>Proposed Experiment</h3>
+                    <p class="subtitle">The agents suggest testing the following formulation in the lab:</p>
+                    <div id="proposed-params" class="params-grid">
+                        <!-- JS injected -->
                     </div>
+                    <div class="reason-box" id="proposal-reason"></div>
+                </div>
+
+                <div class="input-card mt-2">
+                    <h3>Laboratory Result</h3>
+                    <p class="subtitle">Perform the experiment above and enter the resulting stability score (or target metric).</p>
+                    <div class="input-group row">
+                        <input type="number" id="lab-score" placeholder="e.g. 85.5" step="0.1">
+                        <button id="submit-result-btn" class="primary-btn">Submit & Get Next Proposal</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section id="history-section" class="glass-panel hidden">
+                <h2>Experiment History</h2>
+                <div class="metrics-summary">
+                    <div class="metric-card">
+                        <h3>Best Score</h3>
+                        <div id="best-score-val" class="metric-value">--</div>
+                    </div>
+                </div>
+                <div id="history-list" class="history-list mt-2">
+                    <!-- JS injected -->
                 </div>
             </section>
         </main>
