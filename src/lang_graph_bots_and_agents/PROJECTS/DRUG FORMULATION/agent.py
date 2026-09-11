@@ -2,9 +2,8 @@ import operator
 from typing import Annotated, List, TypedDict, Dict, Any
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
-from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
-
+from langchain_groq import ChatGroq
 # Pure Python/Windows-friendly libraries
 from rdkit import Chem
 from rdkit.Chem import Descriptors, QED, AllChem, rdShapeHelpers
