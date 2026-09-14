@@ -13,6 +13,7 @@ dependencies = [
     "fastapi>=0.111.0",
     "feedparser>=6.0.14",
     "gpytorch>=1.15.2",
+    "ipykernel>=7.3.0",
     "ipython-genutils>=0.2.0",
     "langchain>=0.2.0",
     "langchain-core>=0.2.0",
