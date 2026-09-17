@@ -9,7 +9,7 @@ from rdkit import Chem
 from rdkit.Chem import Descriptors, QED, AllChem, rdShapeHelpers
 import os 
 from dotenv import load_dotenv
-
+from langchain_ollama import ChatOllama
 
 load_dotenv()
 
@@ -19,7 +19,7 @@ os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
 
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
-llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0.7)
+llm = ChatOllama(model="medgemma:4b")
 # ==========================================
 # 1. GRAPH STATE
 # ==========================================

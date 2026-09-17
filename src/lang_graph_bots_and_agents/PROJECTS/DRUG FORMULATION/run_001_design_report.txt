@@ -1,176 +1,2264 @@
 --- DRUG DESIGN REPORT ---
-Date: 2026-09-12 21:55:49
+Date: 2026-09-17 22:46:02
 Session ID: run_001
 Target Constraints:
-Target: Cyp450 Transcription Factor...
+Target: K-RAS Transcription Factor...
 Design Strategy: Molecular Glue...
 ----------------------------------------
 FINAL CANDIDATES:
 
 Candidate #1
-SMILES:  CC(C)C1=CC=C(C=C1)C(=O)NCC2=CN=CN2
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.866
-LogP:    2.46
-MW:      243.31 Da
-Docking: -4.51 kcal/mol
-Score:   26.34
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #2
-SMILES:  CC(C)C1=CC=C(C=C1)C(=O)NCC2=CN=CN2
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.866
-LogP:    2.46
-MW:      243.31 Da
-Docking: -4.51 kcal/mol
-Score:   26.34
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #3
-SMILES:  CC(C)C1=CC=C(C=C1)C(=O)NCC2=CN=CN2
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.866
-LogP:    2.46
-MW:      243.31 Da
-Docking: -4.51 kcal/mol
-Score:   26.34
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #4
-SMILES:  CC(C)C1=CC=C(C=C1)C(=O)NCC2=CN=CN2
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.866
-LogP:    2.46
-MW:      243.31 Da
-Docking: -4.51 kcal/mol
-Score:   26.34
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #5
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #6
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #7
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #8
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   107.91999999999999
 
 Candidate #9
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #10
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #11
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #12
-SMILES:  CC(C)C1=NC2=C(N1)C=CC=C2C(=O)NCCN(C)C(=O)C3=CC=CC=C3
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
 Valid:   True
-QED:     0.705
-LogP:    3.19
-MW:      364.45 Da
-Docking: -3.5 kcal/mol
-Score:   21.1
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #13
-SMILES:  O=C(Nc1nc(N)nc(N)n1)N1C(=O)NCCN1
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
 Valid:   True
-QED:     0.387
-LogP:    -1.9
-MW:      253.23 Da
-Docking: -5.31 kcal/mol
-Score:   18.36
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #14
-SMILES:  O=C(Nc1nc(N)nc(N)n1)N1C(=O)NCCN1
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
 Valid:   True
-QED:     0.387
-LogP:    -1.9
-MW:      253.23 Da
-Docking: -5.31 kcal/mol
-Score:   18.36
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #15
-SMILES:  O=C1N=CNc2ccccc12N2CCCC2C(=O)Nc3ccccc3
-Valid:   False
-QED:     0.0
-LogP:    0.0
-MW:      0.0 Da
-Docking: 0.0 kcal/mol
-Score:   -100.0
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #16
-SMILES:  O=C1N=CNc2ccccc12N2CCCC2C(=O)Nc3ccccc3
-Valid:   False
-QED:     0.0
-LogP:    0.0
-MW:      0.0 Da
-Docking: 0.0 kcal/mol
-Score:   -100.0
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   83.68
 
 Candidate #17
-SMILES:  O=C1N=CNc2ccccc12N2CCCC2C(=O)Nc3ccccc3
-Valid:   False
-QED:     0.0
-LogP:    0.0
-MW:      0.0 Da
-Docking: 0.0 kcal/mol
-Score:   -100.0
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
 
 Candidate #18
-SMILES:  O=C1N=CNc2ccccc12N2CCCC2C(=O)Nc3ccccc3
-Valid:   False
-QED:     0.0
-LogP:    0.0
-MW:      0.0 Da
-Docking: 0.0 kcal/mol
-Score:   -100.0
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
 
 Candidate #19
-SMILES:  O=C1N=CNc2ccccc12N2CCCC2C(=O)Nc3ccccc3
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
+
+Candidate #20
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
+
+Candidate #21
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
+
+Candidate #22
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
+
+Candidate #23
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
+
+Candidate #24
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   82.16
+
+Candidate #25
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #26
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #27
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #28
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #29
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #30
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #31
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #32
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   78.08
+
+Candidate #33
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #34
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #35
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #36
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #37
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #38
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #39
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #40
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #41
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #42
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #43
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #44
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #45
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #46
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #47
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #48
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   53.959999999999994
+
+Candidate #49
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #50
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #51
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #52
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #53
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #54
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #55
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #56
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   53.68
+
+Candidate #57
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #58
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #59
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #60
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #61
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #62
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #63
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #64
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   49.6
+
+Candidate #65
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #66
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #67
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #68
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #69
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #70
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #71
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #72
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   48.8
+
+Candidate #73
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #74
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #75
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #76
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #77
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #78
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #79
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #80
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #81
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #82
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #83
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #84
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #85
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #86
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #87
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #88
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   41.84
+
+Candidate #89
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #90
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #91
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #92
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #93
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #94
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #95
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #96
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #97
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #98
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #99
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #100
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #101
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #102
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #103
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #104
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   41.08
+
+Candidate #105
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #106
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #107
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #108
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #109
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #110
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #111
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #112
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #113
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #114
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #115
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #116
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #117
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #118
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #119
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #120
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   39.04
+
+Candidate #121
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #122
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #123
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #124
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #125
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #126
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #127
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #128
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #129
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #130
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #131
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #132
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #133
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #134
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #135
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #136
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #137
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #138
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #139
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #140
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #141
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #142
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #143
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #144
+SMILES:  c1ccc(cc1)NS(=O)(=O)C1CC2CCC1C2
+Valid:   True
+QED:     0.897
+LogP:    2.62
+MW:      251.35 Da
+Docking: -4.52 kcal/mol
+Score:   26.98
+
+Candidate #145
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #146
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #147
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #148
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #149
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #150
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #151
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #152
+SMILES:  C1CCCCC1C(=O)NCCc1n(C)nnc1
+Valid:   True
+QED:     0.85
+LogP:    1.05
+MW:      236.32 Da
+Docking: -4.92 kcal/mol
+Score:   26.84
+
+Candidate #153
+SMILES:  c1ccc(cc1)C(=O)NCCN(C)C
+Valid:   True
+QED:     0.771
+LogP:    0.98
+MW:      192.26 Da
+Docking: -5.36 kcal/mol
+Score:   26.14
+
+Candidate #154
+SMILES:  c1ccc(cc1)C(=O)NCCN(C)C
+Valid:   True
+QED:     0.771
+LogP:    0.98
+MW:      192.26 Da
+Docking: -5.36 kcal/mol
+Score:   26.14
+
+Candidate #155
+SMILES:  c1ccc(cc1)C(=O)NCCN(C)C
+Valid:   True
+QED:     0.771
+LogP:    0.98
+MW:      192.26 Da
+Docking: -5.36 kcal/mol
+Score:   26.14
+
+Candidate #156
+SMILES:  c1ccc(cc1)C(=O)NCCN(C)C
+Valid:   True
+QED:     0.771
+LogP:    0.98
+MW:      192.26 Da
+Docking: -5.36 kcal/mol
+Score:   26.14
+
+Candidate #157
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #158
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #159
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #160
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #161
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #162
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #163
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #164
+SMILES:  CC(C)C1=NC(=O)N(C(=O)N1C)C2=CC=CC=C2
+Valid:   True
+QED:     0.794
+LogP:    1.05
+MW:      245.28 Da
+Docking: -4.91 kcal/mol
+Score:   25.700000000000003
+
+Candidate #165
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #166
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #167
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #168
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #169
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #170
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #171
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #172
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #173
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #174
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #175
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #176
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #177
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #178
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #179
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #180
+SMILES:  CC1=CN=C(N=C1)C(=O)N1CCC(C(=O)O)C1
+Valid:   True
+QED:     0.798
+LogP:    0.33
+MW:      235.24 Da
+Docking: -4.42 kcal/mol
+Score:   24.8
+
+Candidate #181
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #182
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #183
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #184
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #185
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #186
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #187
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #188
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #189
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #190
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #191
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #192
+SMILES:  O=C(Nc1ccc(cc1)C2CC(C3=nnn[nH]3)CCN2)C
+Valid:   True
+QED:     0.792
+LogP:    1.37
+MW:      286.34 Da
+Docking: -4.28 kcal/mol
+Score:   24.4
+
+Candidate #193
+SMILES:  Cc1ccc(cc1)C(=O)N1CCCC1
+Valid:   True
+QED:     0.663
+LogP:    2.23
+MW:      189.26 Da
+Docking: -4.27 kcal/mol
+Score:   21.8
+
+Candidate #194
+SMILES:  Cc1ccc(cc1)C(=O)N1CCCC1
+Valid:   True
+QED:     0.663
+LogP:    2.23
+MW:      189.26 Da
+Docking: -4.27 kcal/mol
+Score:   21.8
+
+Candidate #195
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #196
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #197
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #198
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #199
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #200
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #201
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #202
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #203
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #204
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #205
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #206
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #207
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #208
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #209
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #210
+SMILES:  N1(S(=O)(=O)c1ccncc1)C2=CC=CC=C2C1CN3CCOCC3
+Valid:   True
+QED:     0.766
+LogP:    1.69
+MW:      345.42 Da
+Docking: -2.8 kcal/mol
+Score:   20.92
+
+Candidate #211
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #212
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #213
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #214
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #215
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #216
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #217
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #218
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #219
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #220
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #221
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #222
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #223
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #224
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #225
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #226
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #227
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #228
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #229
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #230
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #231
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #232
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #233
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #234
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #235
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #236
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #237
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #238
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #239
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #240
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #241
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #242
+SMILES:  CC1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCS(=O)(=O)C
+Valid:   True
+QED:     0.725
+LogP:    0.9
+MW:      359.41 Da
+Docking: -3.02 kcal/mol
+Score:   20.54
+
+Candidate #243
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #244
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #245
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #246
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #247
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #248
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #249
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #250
+SMILES:  O=S(=O)(c1ccncc1)C1CCCCC1
+Valid:   True
+QED:     0.775
+LogP:    2.19
+MW:      225.31 Da
+Docking: -2.01 kcal/mol
+Score:   19.52
+
+Candidate #251
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
 Valid:   False
 QED:     0.0
 LogP:    0.0
@@ -178,12 +2266,156 @@ MW:      0.0 Da
 Docking: 0.0 kcal/mol
 Score:   -100.0
 
-Candidate #20
-SMILES:  O=C1N=CNc2ccccc12N2CCCC2C(=O)Nc3ccccc3
+Candidate #252
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
 Valid:   False
 QED:     0.0
 LogP:    0.0
 MW:      0.0 Da
 Docking: 0.0 kcal/mol
 Score:   -100.0
+
+Candidate #253
+SMILES:  O=C(NC1CC1)c1nc2ccccc2n1
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #254
+SMILES:  O=C(NC1CC1)c1nc2ccccc2n1
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #255
+SMILES:  O=C(NC1CC1)c1nc2ccccc2n1
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #256
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #257
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #258
+SMILES:  O=C(NC1CC1)c1nc2ccccc2n1
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #259
+SMILES:  O=C(NC1CC1)c1nc2ccccc2n1
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #260
+SMILES:  O=C(NC1CC1)c1nc2ccccc2n1
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #261
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #262
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #263
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #264
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #265
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #266
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #267
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
+
+Candidate #268
+SMILES:  n1(C2CC2)nc(ccn1)C(=O)NC1CCC2C1C2
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -200.0
 

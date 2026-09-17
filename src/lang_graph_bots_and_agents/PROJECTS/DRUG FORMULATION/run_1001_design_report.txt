@@ -1,0 +1,189 @@
+--- DRUG DESIGN REPORT ---
+Date: 2026-09-17 22:46:35
+Session ID: run_1001
+Target Constraints:
+Target: K-RAS Transcription Factor...
+Design Strategy: Molecular Glue...
+----------------------------------------
+FINAL CANDIDATES:
+
+Candidate #1
+SMILES:  O=C(N1CCOCC1)c1ccc(C(F)(F)F)cc1
+Valid:   True
+QED:     0.773
+LogP:    2.18
+MW:      259.23 Da
+Docking: -5.41 kcal/mol
+Score:   26.28
+
+Candidate #2
+SMILES:  O=C(N1CCOCC1)c1ccc(C(F)(F)F)cc1
+Valid:   True
+QED:     0.773
+LogP:    2.18
+MW:      259.23 Da
+Docking: -5.41 kcal/mol
+Score:   26.28
+
+Candidate #3
+SMILES:  O=C(N1CCOCC1)c1ccc(C(F)(F)F)cc1
+Valid:   True
+QED:     0.773
+LogP:    2.18
+MW:      259.23 Da
+Docking: -5.41 kcal/mol
+Score:   26.28
+
+Candidate #4
+SMILES:  O=C(N1CCOCC1)c1ccc(C(F)(F)F)cc1
+Valid:   True
+QED:     0.773
+LogP:    2.18
+MW:      259.23 Da
+Docking: -5.41 kcal/mol
+Score:   26.28
+
+Candidate #5
+SMILES:  O=C(N1CCOCC1)c1ccc(C(F)(F)F)cc1
+Valid:   True
+QED:     0.773
+LogP:    2.18
+MW:      259.23 Da
+Docking: -5.41 kcal/mol
+Score:   26.28
+
+Candidate #6
+SMILES:  O=C(N1CCOCC1)c1ccc(C(F)(F)F)cc1
+Valid:   True
+QED:     0.773
+LogP:    2.18
+MW:      259.23 Da
+Docking: -5.41 kcal/mol
+Score:   26.28
+
+Candidate #7
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C(=O)C3=CC=CC=C3
+Valid:   True
+QED:     0.715
+LogP:    2.64
+MW:      266.3 Da
+Docking: -4.26 kcal/mol
+Score:   22.82
+
+Candidate #8
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C(=O)C3=CC=CC=C3
+Valid:   True
+QED:     0.715
+LogP:    2.64
+MW:      266.3 Da
+Docking: -4.26 kcal/mol
+Score:   22.82
+
+Candidate #9
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #10
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #11
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #12
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #13
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #14
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #15
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #16
+SMILES:  CC(C)C1=NC=NC2=C1N=CN2C3=CC=C(C=C3)C(=O)NCCO
+Valid:   True
+QED:     0.744
+LogP:    1.66
+MW:      325.37 Da
+Docking: -3.18 kcal/mol
+Score:   21.24
+
+Candidate #17
+SMILES:  C1CN(C)CCO1C(=O)Nc2ncnc(c2c3ccc(C1CC1)cc3)N
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #18
+SMILES:  C1CN(C)CCO1C(=O)Nc2ncnc(c2c3ccc(C1CC1)cc3)N
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #19
+SMILES:  C1CN(C)CCO1C(=O)Nc2ncnc(c2c3ccc(C1CC1)cc3)N
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
+Candidate #20
+SMILES:  C1CN(C)CCO1C(=O)Nc2ncnc(c2c3ccc(C1CC1)cc3)N
+Valid:   False
+QED:     0.0
+LogP:    0.0
+MW:      0.0 Da
+Docking: 0.0 kcal/mol
+Score:   -100.0
+
