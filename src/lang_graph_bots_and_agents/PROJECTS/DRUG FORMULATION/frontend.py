@@ -7,7 +7,7 @@ from rdkit.Chem import AllChem
 
 st.set_page_config(layout="wide", page_title="AI Drug Designer")
 
-st.title(" Autonomous De Novo Drug Designer")
+st.title(" Autonomous Protien Inhabitor Designer")
 st.markdown("Powered by LangGraph, FastAPI, AutoDock Vina, and RDKit")
 
 col1, col2 = st.columns([1, 1.5])

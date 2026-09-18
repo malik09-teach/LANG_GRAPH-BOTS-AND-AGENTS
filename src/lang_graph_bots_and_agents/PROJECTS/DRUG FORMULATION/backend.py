@@ -18,15 +18,16 @@ def run_agent(request: DesignRequest):
     """Executes the agentic loop and saves a text report to disk."""
     config = {"configurable": {"thread_id": request.thread_id}}
     
+    # backend.py
     initial_state = {
-        "target_info": request.target_info,
-        "current_smiles": [],
-        "eval_results": [],
-        "best_candidates": [],
-        "iteration": 0,
-        "feedback": "Initialize generation based on target constraints."
-    }
-    
+           "target_info": request.target_info,
+           "current_smiles": [],
+           "eval_results": [],
+           "best_candidates": [],
+           "iteration": 0,
+           "feedback": "Initialize generation based on target constraints.",
+           "history_log": []  # <-- Add this line
+                     }
     # Execute the graph
     print(f"Starting agent run for thread: {request.thread_id}...")
     final_state = drug_agent.invoke(initial_state, config=config)
