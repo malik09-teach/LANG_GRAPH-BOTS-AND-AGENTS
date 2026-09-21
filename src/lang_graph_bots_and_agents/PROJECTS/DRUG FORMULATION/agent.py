@@ -19,7 +19,7 @@ os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
 
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
-llm = ChatGroq(model="openai/gpt-oss-120b")
+llm = ChatOllama(model="medgemma:4b")
 # ==========================================
 # 1. GRAPH STATE
 # ==========================================
