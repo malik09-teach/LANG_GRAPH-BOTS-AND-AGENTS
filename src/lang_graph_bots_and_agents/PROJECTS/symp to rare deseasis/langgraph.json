@@ -1,0 +1,10 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "neuro_symbolic_auditor": "./hitl_auditor.py:app"
+    },
+    "env": ".env",
+    "python_version": "3.11"
+}

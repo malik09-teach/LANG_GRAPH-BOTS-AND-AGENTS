@@ -4,4 +4,7 @@ langsmith
 pandas 
 langchain-groq
 python-dotenv
-langgraph-cli[inmem]
+langchain-core
+pydantic
+langchain-sdk
+langchain-cli[inmem]
