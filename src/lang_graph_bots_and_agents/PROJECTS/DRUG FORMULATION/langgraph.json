@@ -1,0 +1,10 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "drug_design_agent": "./agent.py:drug_agent"
+    },
+    "env": "../../../../.env",
+    "python_version": "3.11"
+}

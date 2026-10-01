@@ -19,8 +19,8 @@ os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
 
 os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
-llm = ChatOllama(model="medgemma:4b")
-# ==========================================
+# Change this line in your Python script:
+llm = ChatOllama(model="medgemma:4b", base_url="http://host.docker.internal:11434")# ==========================================
 # 1. GRAPH STATE
 # ==========================================
 class DrugDesignState(TypedDict):
