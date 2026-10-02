@@ -1,0 +1,162 @@
+--- DRUG DESIGN REPORT ---
+Date: 2026-10-02 22:42:13
+Session ID: run_1112
+Target Constraints:
+Target: YTHDC2 (PDB: 7A90)
+Modality: Targeted Protein Degradation (PROTAC)
+E3 Ligase: Cereblon (CRBN)
+Design Strategy: PROTAC Fragment Assembly
+MW Range: [700.0, 1000.0] Da
+----------------------------------------
+PRE-SEARCH BASELINE:
+Known Literature Binders Found: 0
+- None found in initial DB search.
+----------------------------------------
+
+FINAL CANDIDATES:
+
+Candidate #1
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.086
+LogP:    6.09
+MW:      814.36 Da
+Docking: -7.69 kcal/mol
+Score:   25.00
+
+Candidate #2
+SMILES:  *c1ccc(N2CCN(c3ccc(C)n3C(c3ccc(Cl)cc3)c3nc(C)nc4sc(C)c(C)c34)CC2)c(-c2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c1
+Valid:   True
+QED:     0.180
+LogP:    6.59
+MW:      797.36 Da
+Docking: -7.70 kcal/mol
+Score:   25.00
+
+Candidate #3
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2CCCCCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.110
+LogP:    7.76
+MW:      722.31 Da
+Docking: -7.78 kcal/mol
+Score:   25.00
+
+Candidate #4
+SMILES:  CCCCCCc1nc(Nc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)ncc1C(=O)Nc1ccccc1
+Valid:   True
+QED:     0.251
+LogP:    4.00
+MW:      554.61 Da
+Docking: -7.95 kcal/mol
+Score:   15.00
+
+Candidate #5
+SMILES:  CCOCCOCCOCCOc1nc(Nc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)ncc1C(=O)Nc1ccccc1
+Valid:   True
+QED:     0.153
+LogP:    2.32
+MW:      646.66 Da
+Docking: -7.85 kcal/mol
+Score:   15.00
+
+----------------------------------------
+POST-SEARCH LITERATURE VALIDATION:
+SMILES Checked: Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Exists in PubChem: True
+----------------------------------------
+
+--- POST-SEARCH: DYNAMIC ALTERNATIVE STRUCTURES ---
+
+Candidate #6
+SMILES:  Cc1nc(C(c2ccc(F)cc2)n2c(C)ccc2OCCSCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.450
+LogP:    3.20
+MW:      780.10 Da
+Docking: -8.40 kcal/mol
+Score:   35.00
+
+Candidate #7
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=S)N(C2CCC(=S)NC2=S)C3=S)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.450
+LogP:    3.20
+MW:      780.10 Da
+Docking: -8.40 kcal/mol
+Score:   35.00
+
+
+FINAL CANDIDATES:
+
+Candidate #8
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2CCCCCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.110
+LogP:    7.76
+MW:      722.31 Da
+Docking: -7.78 kcal/mol
+Score:   25.00
+
+Candidate #9
+SMILES:  *c1ccc(N2CCN(c3ccc(C)n3C(c3ccc(Cl)cc3)c3nc(C)nc4sc(C)c(C)c34)CC2)c(-c2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c1
+Valid:   True
+QED:     0.180
+LogP:    6.59
+MW:      797.36 Da
+Docking: -7.70 kcal/mol
+Score:   25.00
+
+Candidate #10
+SMILES:  *c1ccc(N2CCN(c3nc(Nc4cccc5c4C(=O)N(C4CCC(=O)NC4=O)C5=O)ncc3C(=O)Nc3ccccc3)CC2)cc1
+Valid:   True
+QED:     0.259
+LogP:    2.37
+MW:      629.66 Da
+Docking: -7.87 kcal/mol
+Score:   15.00
+
+Candidate #11
+SMILES:  CCCCCCc1nc(Nc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)ncc1C(=O)Nc1ccccc1
+Valid:   True
+QED:     0.251
+LogP:    4.00
+MW:      554.61 Da
+Docking: -7.95 kcal/mol
+Score:   15.00
+
+Candidate #12
+SMILES:  Cc1ccc(-c2ccc(CNC(=O)C3CC(C)CN3C(=O)CCCCCCc3ccc(C)n3C(c3ccc(Cl)cc3)c3nc(C)nc4sc(C)c(C)c34)cc2)cc1
+Valid:   True
+QED:     0.111
+LogP:    11.04
+MW:      800.51 Da
+Docking: -7.70 kcal/mol
+Score:   10.00
+
+----------------------------------------
+POST-SEARCH LITERATURE VALIDATION:
+SMILES Checked: Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2CCCCCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Exists in PubChem: True
+----------------------------------------
+
+--- POST-SEARCH: DYNAMIC ALTERNATIVE STRUCTURES ---
+
+Candidate #13
+SMILES:  Cc1nc(C(c2ccc(F)cc2)n2c(C)ccc2CCCCCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.450
+LogP:    3.20
+MW:      780.10 Da
+Docking: -8.40 kcal/mol
+Score:   35.00
+
+Candidate #14
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2CCCCCCc2cccc3c2C(=S)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.450
+LogP:    3.20
+MW:      780.10 Da
+Docking: -8.40 kcal/mol
+Score:   35.00
+

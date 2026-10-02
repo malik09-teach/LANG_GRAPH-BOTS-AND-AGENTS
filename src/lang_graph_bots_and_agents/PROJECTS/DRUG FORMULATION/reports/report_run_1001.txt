@@ -1,0 +1,47 @@
+--- DRUG DESIGN REPORT ---
+Date: 2026-10-02 23:32:26
+Thread ID: run_1001
+Target Constraints:
+Target Name: MYC Transcription Factor
+Auto-Discovered PDB ID: 4RRU
+Auto-Assigned E3 Ligase: Cereblon (CRBN)
+----------------------------------------
+LIVE PUBCHEM PRE-SEARCH:
+Found 0 literature binders for target.
+- No prior binders found. Generating de novo.
+----------------------------------------
+
+--- ITERATION 1 CANDIDATES ---
+
+Candidate #1
+SMILES:  c1nc2ccccc2n1C(=O)NCCCN1CC(=O)NC(=O)C1
+Valid:   True
+QED:     0.609
+LogP:    -0.06
+MW:      315.33 Da
+Docking: -9.33 kcal/mol
+Score:   43.02
+
+Candidate #2
+SMILES:  c1ccc2nc(sc2c1)C(=O)NCCOCCOCCN1CC(=O)NC(=O)C1
+Valid:   True
+QED:     0.423
+LogP:    0.02
+MW:      406.46 Da
+Docking: -8.65 kcal/mol
+Score:   34.22
+
+Candidate #3
+SMILES:  c1csc2c1nc(N)nc2C(=O)NCCOCCOCCOCCN1CC(=O)NC(=O)C1
+Valid:   True
+QED:     0.247
+LogP:    -0.99
+MW:      466.52 Da
+Docking: -9.42 kcal/mol
+Score:   28.72
+
+----------------------------------------
+POST-SEARCH PUBCHEM VALIDATION:
+Top SMILES: c1nc2ccccc2n1C(=O)NCCCN1CC(=O)NC(=O)C1
+Exists in Literature: True
+----------------------------------------

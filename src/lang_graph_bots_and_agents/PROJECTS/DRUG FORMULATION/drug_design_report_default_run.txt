@@ -1,0 +1,84 @@
+--- DRUG DESIGN REPORT ---
+Date: 2026-10-02 23:11:06
+Session ID: default_run
+Target Constraints:
+Target: STAT3 (PDB: 3MXK
+Modality: Targeted Protein Degradation (PROTAC)
+E3 Ligase: Cereblon (CRBN)
+Design Strategy: PROTAC Fragment Assembly
+MW Range: [700.0, 1000.0] Da
+----------------------------------------
+PRE-SEARCH BASELINE:
+Known Literature Binders Found: 0
+- None found in initial DB search.
+----------------------------------------
+
+FINAL CANDIDATES:
+
+Candidate #7
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.086
+LogP:    6.09
+MW:      814.36 Da
+Docking: -7.69 kcal/mol
+Score:   25.00
+
+Candidate #8
+SMILES:  CCCCCCc1nc(Nc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)ncc1C(=O)Nc1ccccc1
+Valid:   True
+QED:     0.251
+LogP:    4.00
+MW:      554.61 Da
+Docking: -7.95 kcal/mol
+Score:   15.00
+
+Candidate #9
+SMILES:  *c1ccc(N2CCN(c3nc(NC(=O)N4CC(C)CC4C(=O)NCc4ccc(-c5ccc(C)cc5)cc4)ncc3C(=O)Nc3ccccc3)CC2)cc1
+Valid:   True
+QED:     0.178
+LogP:    5.76
+MW:      707.86 Da
+Docking: -7.79 kcal/mol
+Score:   10.00
+
+----------------------------------------
+POST-SEARCH LITERATURE VALIDATION:
+SMILES Checked: Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Exists in PubChem: True
+----------------------------------------
+
+FINAL CANDIDATES:
+
+Candidate #10
+SMILES:  Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Valid:   True
+QED:     0.086
+LogP:    6.09
+MW:      814.36 Da
+Docking: -7.69 kcal/mol
+Score:   25.00
+
+Candidate #11
+SMILES:  CCCCCCc1nc(Nc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)ncc1C(=O)Nc1ccccc1
+Valid:   True
+QED:     0.251
+LogP:    4.00
+MW:      554.61 Da
+Docking: -7.95 kcal/mol
+Score:   15.00
+
+Candidate #12
+SMILES:  *c1ccc(N2CCN(c3ccc(C)n3C(c3ccc(Cl)cc3)c3nc(C)nc4sc(C)c(C)c34)CC2)c(C(=O)N2CC(C)CC2C(=O)NCc2ccc(-c3ccc(C)cc3)cc2)c1
+Valid:   True
+QED:     0.147
+LogP:    9.66
+MW:      875.56 Da
+Docking: -7.62 kcal/mol
+Score:   10.00
+
+----------------------------------------
+POST-SEARCH LITERATURE VALIDATION:
+SMILES Checked: Cc1nc(C(c2ccc(Cl)cc2)n2c(C)ccc2OCCOCCOCCOCCc2cccc3c2C(=O)N(C2CCC(=O)NC2=O)C3=O)c2c(C)c(C)sc2n1
+Exists in PubChem: True
+----------------------------------------
