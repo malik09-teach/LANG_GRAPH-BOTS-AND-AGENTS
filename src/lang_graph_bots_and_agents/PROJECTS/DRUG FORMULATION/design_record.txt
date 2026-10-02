@@ -1,0 +1,9 @@
+--- DRUG DESIGN REPORT ---
+Date: 2026-10-02 19:48:32
+Session ID: test_run_1101
+Target Constraints:
+Target: STATE3.
+Design Strategy: Design a PROTAC (Proteolysis Targeting Chimera) degrader. The molecule must have two ends:
+----------------------------------------
+FINAL CANDIDATES:
+
