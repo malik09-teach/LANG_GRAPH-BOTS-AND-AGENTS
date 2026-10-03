@@ -32,7 +32,7 @@ def run_design(data: TargetPayload):
         report_path = os.path.abspath(os.path.join("reports", f"report_{data.thread_id}.txt"))
         
         return {
-            "status": "success",
+            "status": "ksuccess",
             "thread_id": data.thread_id,
             "auto_pdb_id": result.get("auto_pdb_id"),
             "auto_e3_ligase": result.get("auto_e3_ligase"),
