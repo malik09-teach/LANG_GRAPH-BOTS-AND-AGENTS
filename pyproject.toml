@@ -23,6 +23,7 @@ dependencies = [
     "langchain-huggingface>=1.2.2",
     "langchain-openai>=0.1.7",
     "langgraph>=0.1.5",
+    "langgraph-api>=0.13.3",
     "langgraph-cli[inmem]>=0.4.31",
     "langsmith>=0.11.1",
     "meeko>=0.8.0",
