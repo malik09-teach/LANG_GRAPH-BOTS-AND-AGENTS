@@ -2,26 +2,29 @@ import os
 import datetime
 import requests
 import operator
+import re
+import json
 from typing import Annotated, List, TypedDict, Dict, Any
 
 from pydantic import BaseModel, Field
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
-from langchain_core.messages import HumanMessage
+from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
+from langchain_core.tools import tool
 from rdkit import Chem
 from rdkit.Chem import Descriptors, QED, AllChem, rdShapeHelpers
 from dotenv import load_dotenv
-from langchain_ollama import ChatOllama
+from langchain_groq import ChatGroq
 
 load_dotenv()
 
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY", "")
+os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT", "")
 
-# Fix for 400 Error: Use a model strictly optimized for tool calling on Groq
-llm = ChatOllama(model="medgemma:4b")
+# LLM Instance
+llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0.2)
+
 # ==========================================
 # CONSTANTS & REFERENCES
 # ==========================================
@@ -55,7 +58,7 @@ class DrugDesignState(TypedDict):
     history_log: Annotated[List[str], operator.add]
 
 # ==========================================
-# UTILITIES
+# CUSTOM TOOLS & UTILITIES
 # ==========================================
 def write_report_event(thread_id: str, content: str, mode: str = "a"):
     os.makedirs("reports", exist_ok=True)
@@ -66,7 +69,9 @@ def write_report_event(thread_id: str, content: str, mode: str = "a"):
         os.fsync(f.fileno())
     return filepath
 
-def fetch_pdb_id_automatically(target_name: str) -> str:
+@tool
+def fetch_pdb_tool(target_name: str) -> str:
+    """Queries RCSB PDB API for a given target name."""
     try:
         url = "https://search.rcsb.org/rcsbsearch/v2/query"
         query = {
@@ -81,6 +86,28 @@ def fetch_pdb_id_automatically(target_name: str) -> str:
         pass
     return "1F86"
 
+@tool
+def fetch_pubchem_tool(target_name: str) -> List[str]:
+    """Retrieves canonical SMILES for target binders from PubChem."""
+    known_refs = []
+    try:
+        url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{target_name}/property/CanonicalSMILES/JSON"
+        res = requests.get(url, timeout=5)
+        if res.status_code == 200:
+            for prop in res.json().get("PropertyTable", {}).get("Properties", []):
+                smi = prop.get("CanonicalSMILES")
+                if smi:
+                    known_refs.append(smi)
+    except Exception:
+        pass
+    return known_refs
+
+# Registry for manual tool calling
+TOOL_REGISTRY = {
+    "fetch_pdb_tool": fetch_pdb_tool,
+    "fetch_pubchem_tool": fetch_pubchem_tool
+}
+
 # ==========================================
 # GRAPH NODES
 # ==========================================
@@ -88,23 +115,16 @@ def ingest(state: DrugDesignState):
     """Initializes the design process."""
     return {"iteration": 0, "history_log": ["[Iteration 0] Ingested target specification."]}
 
-def pre_search(state: DrugDesignState):
-    """Live PDB and PubChem lookups."""
+def pre_search_custom_node(state: DrugDesignState):
+    """Custom Node: Executes tool functions programmatically without relying on LLM auto-invocation."""
     target = state["target_name"]
     thread_id = state["thread_id"]
     
-    pdb_id = fetch_pdb_id_automatically(target)
-    e3_name = "VHL" if "kinase" in target.lower() else "Cereblon (CRBN)"
+    # Direct execution of tools via custom node logic
+    pdb_id = fetch_pdb_tool.invoke({"target_name": target})
+    known_refs = fetch_pubchem_tool.invoke({"target_name": target})
     
-    known_refs = []
-    try:
-        url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{target}/property/CanonicalSMILES/JSON"
-        res = requests.get(url, timeout=5)
-        if res.status_code == 200:
-            for prop in res.json().get("PropertyTable", {}).get("Properties", []):
-                known_refs.append(prop.get("CanonicalSMILES"))
-    except Exception:
-        pass
+    e3_name = "VHL" if "kinase" in target.lower() else "Cereblon (CRBN)"
 
     now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     header = f"--- DRUG DESIGN REPORT ---\nDate: {now_str}\nTarget Name: {target}\nAuto PDB: {pdb_id}\nAuto E3: {e3_name}\n"
@@ -114,11 +134,11 @@ def pre_search(state: DrugDesignState):
         "auto_pdb_id": pdb_id,
         "auto_e3_ligase": e3_name,
         "known_warheads": known_refs,
-        "history_log": ["[Pre-search] Completed target profiling."]
+        "history_log": ["[Pre-search] Completed target profiling via custom tool node."]
     }
 
-def generate(state: DrugDesignState):
-    """Generates SMILES using structured output."""
+def generate_custom_node(state: DrugDesignState):
+    """Generates SMILES with dual fallback (Structured Output -> Manual Regex/JSON Extraction)."""
     iter_num = state.get("iteration", 0) + 1
     target = state["target_name"]
     e3_smiles = E3_LIGANDS[state.get("auto_e3_ligase", "Cereblon (CRBN)")]
@@ -130,15 +150,39 @@ def generate(state: DrugDesignState):
     Known binder SMILES: {warheads if warheads else 'Create a novel core'}
     Previous Feedback: {feedback}
     MUST attach the warhead via a PEG or alkyl linker to this E3 anchor: {e3_smiles}
-    Return ONLY valid SMILES strings.
+    
+    Format your output strictly as a JSON object with key "smiles_list":
+    {{"smiles_list": ["SMILES1", "SMILES2", "SMILES3"]}}
     """
     
-    res = llm.with_structured_output(GenerationBatch).invoke([HumanMessage(content=prompt)])
+    smiles = []
+    try:
+        # Try structured output first
+        res = llm.with_structured_output(GenerationBatch).invoke([HumanMessage(content=prompt)])
+        smiles = res.smiles_list
+    except Exception:
+        # Custom fallback node logic if model tool-calling fails
+        raw_res = llm.invoke([HumanMessage(content=prompt)]).content
+        
+        # Try extracting JSON manually
+        json_match = re.search(r'\{.*\}', raw_res, re.DOTALL)
+        if json_match:
+            try:
+                data = json.loads(json_match.group(0))
+                smiles = data.get("smiles_list", [])
+            except Exception:
+                pass
+        
+        # Fallback regex search for valid SMILES strings if JSON fails
+        if not smiles:
+            candidates = re.findall(r'[A-Za-z0-9@+\-\[\]\(\)\\\/=#$%]{10,}', raw_res)
+            smiles = [c for c in candidates if Chem.MolFromSmiles(c) is not None][:3]
+
     return {
-        "current_smiles": res.smiles_list, 
+        "current_smiles": smiles, 
         "iteration": iter_num,
-        "eval_results": [], # Reset parallel evaluation results list
-        "history_log": [f"[Iteration {iter_num}] Generated 3 SMILES candidates."]
+        "eval_results": [],
+        "history_log": [f"[Iteration {iter_num}] Generated {len(smiles)} SMILES candidates."]
     }
 
 def eval_props(state: DrugDesignState):
@@ -253,12 +297,12 @@ def finalize(state: DrugDesignState):
     return {"history_log": ["[Finalize] Design process complete."]}
 
 # ==========================================
-# GRAPH ARCHITECTURE MATCHING IMAGE
+# GRAPH ARCHITECTURE
 # ==========================================
 builder = StateGraph(DrugDesignState)
 builder.add_node("ingest", ingest)
-builder.add_node("pre_search", pre_search)
-builder.add_node("generate", generate)
+builder.add_node("pre_search", pre_search_custom_node)
+builder.add_node("generate", generate_custom_node)
 builder.add_node("eval_docking", eval_docking)
 builder.add_node("eval_props", eval_props)
 builder.add_node("aggregate", aggregate)
@@ -269,7 +313,6 @@ builder.add_node("finalize", finalize)
 builder.add_edge(START, "ingest")
 builder.add_edge("ingest", "pre_search")
 builder.add_edge("pre_search", "generate")
-# Parallel evaluation branches
 builder.add_edge("generate", "eval_docking")
 builder.add_edge("generate", "eval_props")
 builder.add_edge("eval_docking", "aggregate")
