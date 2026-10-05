@@ -7,7 +7,7 @@ from rdkit.Chem import AllChem
 
 st.set_page_config(layout="wide", page_title="AI PROTAC Designer")
 
-st.title("⚡ Autonomous Protein Inhibitor & PROTAC Designer")
+st.title(" Autonomous Protein Inhibitor & PROTAC Designer")
 st.markdown("Powered by LangGraph, FastAPI, PubChem REST, and RDKit 3D")
 
 col1, col2 = st.columns([1, 1.5], gap="large")
@@ -49,13 +49,13 @@ with col1:
     # Display Auto-Extracted Parameters
     if "auto_pdb" in st.session_state:
         st.markdown("---")
-        st.subheader("🤖 Agent Auto-Discovered Parameters")
+        st.subheader(" Agent Auto-Discovered Parameters")
         p_col1, p_col2 = st.columns(2)
         p_col1.metric("Discovered PDB ID", st.session_state["auto_pdb"])
         p_col2.metric("Assigned E3 Anchor", st.session_state["auto_e3"])
 
     st.markdown("---")
-    st.subheader("📄 Live Report Log")
+    st.subheader(" Live Report Log")
     if st.button("Read Saved txt File", use_container_width=True):
         try:
             res = requests.get(f"http://localhost:8000/report/{session_id}")
