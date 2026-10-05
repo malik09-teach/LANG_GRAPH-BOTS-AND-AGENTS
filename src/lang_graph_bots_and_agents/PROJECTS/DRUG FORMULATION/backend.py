@@ -1,7 +1,8 @@
 import os
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from agent import drug_agent
+
+from agent import drug_agent 
 
 app = FastAPI(title="Dynamic PROTAC Backend")
 
@@ -18,26 +19,25 @@ def run_design(data: TargetPayload):
     initial_input = {
         "target_name": target_name,
         "thread_id": data.thread_id,
-        "auto_pdb_id": "",
-        "auto_e3_ligase": "",
-        "known_warheads": [],
-        "current_candidates": [],
-        "best_seeds": [],
-        "iteration": 0
+        "iteration": 0,
+        "history_log": [] 
     }
     
     config = {"configurable": {"thread_id": data.thread_id}}
+    
     try:
         result = drug_agent.invoke(initial_input, config=config)
         report_path = os.path.abspath(os.path.join("reports", f"report_{data.thread_id}.txt"))
         
         return {
-            "status": "ksuccess",
+            "status": "success",
             "thread_id": data.thread_id,
+            "target_name": target_name,
             "auto_pdb_id": result.get("auto_pdb_id"),
             "auto_e3_ligase": result.get("auto_e3_ligase"),
             "report_file": report_path,
-            "candidates": result.get("current_candidates", [])
+            "best_candidate": result.get("best_candidate", {}),
+            "final_candidates": result.get("eval_results", [])
         }
     except Exception as e:
         import traceback
@@ -49,12 +49,14 @@ def get_report(thread_id: str):
     filepath = os.path.abspath(os.path.join("reports", f"report_{thread_id}.txt"))
     if not os.path.exists(filepath):
         raise HTTPException(status_code=404, detail="Report file not found.")
-    with open(filepath, "r", encoding="utf-8") as f:
-        return {"content": f.read()}
+    
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            content = f.read()
+        return {"thread_id": thread_id, "content": content}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading report: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend:app", host="127.0.0.1", port=8000)
-
-
-    	
+    uvicorn.run("backend:app", host="127.0.0.1", port=8000, reload=True)
