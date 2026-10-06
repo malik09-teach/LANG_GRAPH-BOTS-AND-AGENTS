@@ -141,7 +141,7 @@ def render_3d_molecule(smiles: str, width: int = 680, height: int = 450):
     if embed_result == -1:
         fallback_params = AllChem.EmbedParameters()
         fallback_params.useRandomCoords = True
-        fallback_params.maxAttempts = 10000
+        fallback_params.maxAttempts = 5000
         fallback_params.randomSeed = 123
         embed_result = AllChem.EmbedMolecule(mol, fallback_params)
 
