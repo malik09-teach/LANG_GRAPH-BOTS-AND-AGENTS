@@ -1,10 +1,19 @@
 import os
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 from agent import drug_agent 
 
 app = FastAPI(title="Dynamic PROTAC Backend")
+
+# Allow cross-origin requests from Streamlit or any local frontend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 class TargetPayload(BaseModel):
     target_info: str
@@ -29,15 +38,19 @@ def run_design(data: TargetPayload):
         result = drug_agent.invoke(initial_input, config=config)
         report_path = os.path.abspath(os.path.join("reports", f"report_{data.thread_id}.txt"))
         
+        # Safely extract candidates and best_candidate
+        best_candidate = result.get("best_candidate") or {}
+        final_candidates = result.get("eval_results") or []
+        
         return {
             "status": "success",
             "thread_id": data.thread_id,
             "target_name": target_name,
-            "auto_pdb_id": result.get("auto_pdb_id"),
-            "auto_e3_ligase": result.get("auto_e3_ligase"),
+            "auto_pdb_id": result.get("auto_pdb_id", "N/A"),
+            "auto_e3_ligase": result.get("auto_e3_ligase", "N/A"),
             "report_file": report_path,
-            "best_candidate": result.get("best_candidate", {}),
-            "final_candidates": result.get("eval_results", [])
+            "best_candidate": best_candidate,
+            "final_candidates": final_candidates,
         }
     except Exception as e:
         import traceback

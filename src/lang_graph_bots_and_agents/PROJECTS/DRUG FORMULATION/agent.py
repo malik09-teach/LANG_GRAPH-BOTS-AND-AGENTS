@@ -20,11 +20,10 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
-os.environ["TAVILY_API_KEY"]=os.getenv("TAVILY_API_KEY")
-
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGSMITH_API_KEY") or ""
+os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGSMITH_PROJECT") or ""
+os.environ["TAVILY_API_KEY"] = os.getenv("TAVILY_API_KEY") or ""
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY") or ""
 
 llm = ChatGroq(model="openai/gpt-oss-120b")
 
