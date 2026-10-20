@@ -6,5 +6,37 @@ langchain-groq
 python-dotenv
 langchain-core
 pydantic
-langchain-sdk
+
 langchain-cli[inmem]
+
+
+# API
+fastapi
+uvicorn[standard]
+pydantic
+requests
+
+# LangChain / LangGraph / LLM
+langchain
+langchain-core
+langchain-groq
+langsmith
+langgraph
+
+# Deep Agents
+deepagents
+langchain-quickjs
+
+# Chemistry
+rdkit
+
+# UI / visualization
+streamlit
+py3Dmol
+stmol
+ipython_genutils
+Pillow
+
+# Utilities
+python-dotenv
+
